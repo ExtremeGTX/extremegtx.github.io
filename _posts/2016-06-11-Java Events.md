@@ -172,8 +172,9 @@ if you are building a GUI application then open your JFrame class and do the fol
 
 1. Create New Instance of Room
 
-1
+```java
 Room EmbeddedSystemsRoom = new Room();
+```
 2. Add Event Handlers
 
 ```java
