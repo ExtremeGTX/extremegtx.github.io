@@ -1,3 +1,12 @@
+---
+title: "Android Studio Speed up Tweaks"
+categories:
+  - Android
+tags:
+  - android
+  - gradle
+  - Articles
+---
 this is some tweaks for Android Studio and Gradle Build system to make them perform more faster
 
 ## 1. Android Studio Tweaks

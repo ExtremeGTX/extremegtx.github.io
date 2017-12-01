@@ -1,3 +1,12 @@
+---
+title: "Events in Java"
+categories:
+  - Java
+tags:
+  - java
+  - swdesign
+  - Articles
+---
 # How Events Works in Java
 
 As i can see inside JButton Class, it simply uses **Publish-Subscribe Pattern** for Implementation of Events.  
@@ -118,50 +127,52 @@ Now let’s go back to Room class
 
 Open Room.java and Now we will implement listeners list and when events will be fired.
 
-1. Implementing Listeners List
+1. Implementing Listeners List:
 
-add the following definition
+    add the following definition
 
-```java
-List<RoomListener> listeners = new ArrayList<>();
-```
-add the following function, so a subscriber can add new listener to the list
-```java
-/* Add New RoomListener to the List of Listeners */
-public void AddRoomListener(RoomListener pl) {
-        listeners.add(pl);
-}
-```
-2. Implementation of Event Firing
-Modify Function `AddPerson()`, So it will look like this
-```java
-/* Add new Person to PersonsList */
-public void AddPerson(Person PersonInfo) {
- 
-       //Add Person to List
-       PersonsList.add(PersonInfo);
- 
-      // Notify All Subscribers that a New Person has Entered the Room
-      for (RoomListener p : listeners) {
-          p.TellMeWhoComes(PersonInfo);
-      }
-}
-```
-What we added here is for loop on all listeners in the list to notify them about the person entered the room.
+    ```java
+    List<RoomListener> listeners = new ArrayList<>();
+    ```
+    add the following function, so a subscriber can add new listener to the list
+    ```java
+    /* Add New RoomListener to the List of Listeners */
+    public void AddRoomListener(RoomListener pl) {
+            listeners.add(pl);
+    }
+    ```
+&nbsp;
 
-Modify Function RemovePerson(), So it will look like this
-```java
-/* Remove a Person from PersonsList */
-public void RemovePerson(Person PersonInfo) {
-       //Remove a Person From List
-       PersonsList.remove(PersonInfo);
- 
-       // Notify All Subscribers that a Person has left the Room
-       for (RoomListener p : listeners) {
-           p.TellMeWhoLeaves(PersonInfo);
-       }
-}
-```
+2. Implementation of Event Firing:
+    Modify Function `AddPerson()`, So it will look like this
+    ```java
+    /* Add new Person to PersonsList */
+    public void AddPerson(Person PersonInfo) {
+    
+        //Add Person to List
+        PersonsList.add(PersonInfo);
+    
+        // Notify All Subscribers that a New Person has Entered the Room
+        for (RoomListener p : listeners) {
+            p.TellMeWhoComes(PersonInfo);
+        }
+    }
+    ```
+    What we added here is for loop on all listeners in the list to notify them about the person entered the room.
+
+    Modify Function RemovePerson(), So it will look like this
+    ```java
+    /* Remove a Person from PersonsList */
+    public void RemovePerson(Person PersonInfo) {
+        //Remove a Person From List
+        PersonsList.remove(PersonInfo);
+    
+        // Notify All Subscribers that a Person has left the Room
+        for (RoomListener p : listeners) {
+            p.TellMeWhoLeaves(PersonInfo);
+        }
+    }
+    ```
 ---
 
 The Subscriber
