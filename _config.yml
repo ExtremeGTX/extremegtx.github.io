@@ -12,7 +12,7 @@ locale                   : "en"
 title                    : "My Awesome Blog"
 title_separator          : "-"
 name                     : "Mohamed El-Shahawi"
-description              : "An amazing website."
+description              : "Github pages pilot"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -82,11 +82,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mohamed El-Shahawi"
+  name             : "Mohamed ElShahawi"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            : extremegtx@hotmail.com
+  bio              : "Embedded Software Engineer"
+  location         : "Germany"
+  email            : ExtremeGTX@hotmail.com
   uri              :
   bitbucket        :
   codepen          :
