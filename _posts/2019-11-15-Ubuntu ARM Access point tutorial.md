@@ -127,6 +127,8 @@ The main steps can be listed as following:
                 - 192.168.4.1/24
 
     ```
+
+
 ## Finally:
 - Reboot your Raspberry Pi and check if you can connect to it over WiFi and can SSH.
 
