@@ -67,3 +67,4 @@
 3. Git fork
 4. Git Kraken
 5. TortoiseGit
+6. GitAhead
