@@ -1,3 +1,14 @@
+---
+title: "Ubuntu Server Access point tutorial"
+categories:
+  - Linux
+tags:
+  - Linux
+  - wifi
+  - raspberrypi
+---
+This tutorial for setting up Ubuntu Server (RPi 3B) as Wifi access point 
+
 # Introduction
 
 This tutorial for setting up Ubuntu Server (RPi 3B) as Wifi access point 
